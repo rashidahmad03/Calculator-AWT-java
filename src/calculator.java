@@ -12,8 +12,8 @@ class cal extends Frame {
 	Panel p1, p2;
 	TextField t1, t2;
 
-	String input = "";
-	String input1 = "";
+	String input = "0";
+	String input1 = "0";
 	static char c = ' ';
 
 	class A implements ActionListener {
@@ -287,13 +287,13 @@ class cal extends Frame {
 
 	cal() {
 		setTitle("MyCalci");
-		setSize(800, 800);
+		setSize(800, 700);
 		setBackground(Color.red);
 		setLayout(null);
 		p1 = new Panel();
 		p1.setLayout(null);
 		p1.setBackground(Color.orange);
-		p1.setBounds(50, 120, 700, 120);
+		p1.setBounds(50, 100, 700, 120);
 		add(p1);
 		t1 = new TextField();
 		t1.setBounds(30, 40, 350, 45);
@@ -306,7 +306,7 @@ class cal extends Frame {
 		p1.add(b1);
 		p2 = new Panel();
 		p2.setLayout(null);
-		p2.setBounds(50, 360, 700, 360);
+		p2.setBounds(50, 260, 700, 360);
 		p2.setBackground(Color.orange);
 		add(p2);
 		b2 = new Button("7");
